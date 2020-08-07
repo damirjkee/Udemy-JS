@@ -40,19 +40,40 @@
 
 // console.log(personalMovieDB);
 
-const str = 'test';
+let num = 20;
 
-console.log(str);
-console.log(str);
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10;
+    console.log(num);
+}
 
-const fruit = 'Some fruit';
+showFirstMessage('Hello world');
+console.log(num);
 
-console.log(fruit.indexOf('q'));
+// function calc (a, b){
+//     return (a + b);
+// }
 
-const logg = 'Hello world';
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(10, 6));
 
-// // console.log(logg.slice(6, 11));
+function ret() {
+    let num = 50;
+    return num;
+}
 
-// console.log(logg.substring(6, 11));
+const anotherNum = ret();
+console.log(anotherNum);
 
-console.log(logg.substr(6, 5));
+const logger = function() {
+    console.log('Hello world');
+};
+
+logger();
+
+const calc = (a, b) => {
+    console.log('1');
+    return a + b;
+};
